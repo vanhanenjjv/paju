@@ -96,7 +96,7 @@
 
 <Hidable hidden={view !== "video"}>
   <div id="video" class="stack">
-    <video bind:this={video.element} class="screen" autoplay>
+    <video bind:this={video.element} class="screen" autoplay playsinline>
       <!-- TODO: Figure out wtf this is. -->
       <track kind="captions" />
     </video>
