@@ -2,19 +2,12 @@
   "name": "paju",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "n/a",
   "workspaces": [
-    "client",
-    "functions"
+    "client"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230821.0",
-    "typescript": "^5.2.2"
-  }
+  "license": "ISC"
 }
