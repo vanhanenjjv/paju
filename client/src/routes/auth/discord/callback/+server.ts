@@ -8,7 +8,7 @@ function formBody(params: Record<string, string>): string {
     .join('&');
 }
 
-export const POST: RequestHandler = async ({ request }) => {
+export const GET: RequestHandler = async ({ request }) => {
   const params = new URLSearchParams(request.url)
 
   const code = params.get('code')
