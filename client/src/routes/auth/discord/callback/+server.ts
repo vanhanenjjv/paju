@@ -8,10 +8,8 @@ function formBody(params: Record<string, string>): string {
     .join('&');
 }
 
-export const GET: RequestHandler = async ({ request }) => {
-  const params = new URLSearchParams(request.url)
-
-  const code = params.get('code')
+export const GET: RequestHandler = async ({ url }) => {
+  const code = url.searchParams.get('code')
 
   if (code === null) {
     console.error('No code provided in request')
